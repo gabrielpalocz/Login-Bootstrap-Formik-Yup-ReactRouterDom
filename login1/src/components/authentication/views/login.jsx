@@ -28,7 +28,7 @@ const LoginCopy = () => {
             <h6 className='mt-3 mb-4 text-muted'>Enter your credentials to continue.</h6>
             <LoginValidationSchema onSubmit={(e) => setCreadentials(e)} />
             <hr className=" border border-secondary-subtle opacity-50" />
-            <Link to="/authentication/register" style={{ color: 'black', textDecoration: 'none' }}>Do not have an account?</Link>
+            <Link to="/register" style={{ color: 'black', textDecoration: 'none' }}>Do not have an account?</Link>
         </Card>
 
     )

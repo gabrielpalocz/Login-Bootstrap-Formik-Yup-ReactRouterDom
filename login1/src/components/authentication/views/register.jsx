@@ -28,7 +28,7 @@ const Register = () => {
             <h6 className='mt-3 mb-4 text-muted'>Enter your credentials to continue.</h6>
             <RegisterValidationSchema onSubmit={(e) => setCredentialsReg(e)} />
             <hr className=" border border-secondary-subtle opacity-50" />
-            <Link to="/authentication/login" style={{ color: 'black', textDecoration: 'none' }}>Already have an account?</Link>
+            <Link to="/login" style={{ color: 'black', textDecoration: 'none' }}>Already have an account?</Link>
             <Modal>...</Modal>
         </Card>
     )

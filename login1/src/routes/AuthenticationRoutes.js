@@ -1,10 +1,11 @@
 // login routing
+import AuthLogin from '../components/authentication/views/login';
 
-import AuthLogin from '../components/authentication/loginCopy';
-import AuthRegister from '../components/authentication/registerCopy';
+// register routing
+import AuthRegister from '../components/authentication/views/register';
 
 
-// ==============================|| AUTHENTICATION ROUTING ||============================== //
+// -------------------------------[ AUTHENTICATION ROUTING ]------------------------------- //
 
 const AuthenticationRoutes = [
     {
