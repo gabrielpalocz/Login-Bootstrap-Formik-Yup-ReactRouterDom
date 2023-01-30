@@ -55,6 +55,7 @@ export const RegisterValidationSchema = ({ onSubmit }) => {
                     onSubmit(values);
                     console.log(values);
                     actions.resetForm({});
+                    setStrength(0);
                     actions.setSubmitting(false);
                 }}
             >
