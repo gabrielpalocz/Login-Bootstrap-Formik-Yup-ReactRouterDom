@@ -6,7 +6,7 @@ const LoginFormSchema = Yup.object().shape({
     email: Yup.string().email('Invalid').required('is required'),
 });
 
-export const FPValidationSchema = ({ onSubmit }) => {
+export const ForgotPassValidationSchema = ({ onSubmit }) => {
     let isEmailWrong = false
 
     return (
