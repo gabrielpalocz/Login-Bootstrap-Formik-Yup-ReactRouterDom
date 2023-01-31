@@ -16,8 +16,6 @@ const LoginFormSchema = Yup.object().shape({
 });
 
 export const LoginValidationSchema = ({ onSubmit }) => {
-    let isEmailWrong = false
-    let isPassWrong = false
 
     return (
         <div>
@@ -43,31 +41,21 @@ export const LoginValidationSchema = ({ onSubmit }) => {
                                 <Field
                                     type="email"
                                     name="email"
-                                    className={isEmailWrong ? "form-control shadow-none rounded-4 is-invalid" : "form-control shadow-none rounded-4"}
+                                    className={touched.email && errors.email ? "form-control shadow-none rounded-4 is-invalid" : "form-control shadow-none rounded-4"}
                                     placeholder="Email"
                                 />
-                                {
-                                    touched.email && errors.email ? (
-                                        isEmailWrong = true
-                                    ) : isEmailWrong = false
-                                }
                                 <label htmlFor="email" >
-                                    <p className={isEmailWrong ? "text-danger" : "text-body"}>{isEmailWrong ? `Email address ${errors.email}` : "Email address"}</p>
+                                    <p className={touched.email && errors.email ? "text-danger" : "text-body"}>{touched.email && errors.email ? `Email address ${errors.email}` : "Email address"}</p>
                                 </label>
                             </div>
                             <div className="form-floating">
                                 <Field
                                     type={"password"}
                                     name="password"
-                                    className={isPassWrong ? "form-control shadow-none rounded-4 is-invalid" : "form-control shadow-none rounded-4"}
+                                    className={touched.password && errors.password ? "form-control shadow-none rounded-4 is-invalid" : "form-control shadow-none rounded-4"}
                                     placeholder="Password"
                                 />
-                                {
-                                    touched.password && errors.password ? (
-                                        isPassWrong = true
-                                    ) : isPassWrong = false
-                                }
-                                <label htmlFor="password" ><p className={isPassWrong ? "text-danger" : "text-body"}>{isPassWrong ? `Password ${errors.password}` : "Password"}</p></label>
+                                <label htmlFor="password" ><p className={touched.password && errors.password ? "text-danger" : "text-body"}>{touched.password && errors.password ? `Password ${errors.password}` : "Password"}</p></label>
                             </div>
                             <div className='d-flex justify-content-between p-1'>
                                 <div className='d-flex '>
