@@ -1,13 +1,13 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 import { Card } from '../ui-components/card.js'
-import { LoginValidationSchema } from '../forms/loginForm';
-import { RiLoginCircleLine } from 'react-icons/ri';
+import { FPValidationSchema } from '../forms/forgotPassForm';
+import { BiReset } from 'react-icons/bi';
 
 
 // -------------------------------[ LOGIN VIEW ]------------------------------- //
 
-const Login = () => {
+const ForgotPass = () => {
     const [credentials, setCreadentials] = useState(null);
 
     useEffect(() => {
@@ -21,17 +21,17 @@ const Login = () => {
     return (
         <Card>
             <div className='d-flex justify-content-center pt-3'>
-                <RiLoginCircleLine className='fs-1 me-1' />
-                <h2 className="card-title fw-bold">LOGIN</h2>
+                <BiReset className='fs-1 me-1' />
+                <h2 className="card-title fw-bold">Reset Password</h2>
             </div>
-            <h3 className='mt-5 fw-bold' style={{ color: '#6456ff' }}>Hello, Have a good day!</h3>
-            <h6 className='mt-3 mb-4 text-muted'>Enter your credentials to continue.</h6>
-            <LoginValidationSchema onSubmit={(e) => setCreadentials(e)} />
+            <h3 className='mt-5 fw-bold' style={{ color: '#6456ff' }}>Forgot password?</h3>
+            <h6 className='mt-3 mb-4 text-muted'>Enter your email address below and we will send you password reset </h6>
+            <FPValidationSchema onSubmit={(e) => setCreadentials(e)} />
             <hr className=" border border-secondary-subtle opacity-50" />
-            <Link to="/register" style={{ color: 'black', textDecoration: 'none' }}>Do not have an account?</Link>
+            <Link to="/login" style={{ color: 'black', textDecoration: 'none' }}>Already have an account?</Link>
         </Card>
 
     )
 }
 
-export default Login;
+export default ForgotPass;

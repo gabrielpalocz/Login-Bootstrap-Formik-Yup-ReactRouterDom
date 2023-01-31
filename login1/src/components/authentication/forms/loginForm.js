@@ -1,6 +1,7 @@
 import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
+import { Link } from "react-router-dom";
 
 const LoginFormSchema = Yup.object().shape({
     email: Yup.string().email('Invalid').required('is required'),
@@ -71,7 +72,7 @@ export const LoginValidationSchema = ({ onSubmit }) => {
                                         Remember me
                                     </label>
                                 </div>
-                                <span className="nav-link " role="button" onClick={() => window.location.reload()} >Forgot Password?</span>
+                                <Link to="/forgotpass" style={{ color: 'black', textDecoration: 'none' }}>Forgot Password?</Link>
                             </div>
                             <button className='btn rounded-3 p-2 fw-bold' type="submit" disabled={isSubmitting} style={{ backgroundColor: '#6456ff', color: 'white' }}>{isSubmitting ? <><span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>&nbsp;<strong>Signing In</strong></> : <strong>Sign In</strong>}</button>
                         </div>

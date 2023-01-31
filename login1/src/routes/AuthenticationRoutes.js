@@ -4,6 +4,9 @@ import AuthLogin from '../components/authentication/views/login';
 // register routing
 import AuthRegister from '../components/authentication/views/register';
 
+//  forgot password routing
+import Forgotpass from '../components/authentication/views/forgotPass'
+
 
 // -------------------------------[ AUTHENTICATION ROUTING ]------------------------------- //
 
@@ -19,6 +22,10 @@ const AuthenticationRoutes = [
     {
         path: "/register",
         element: <AuthRegister />
+    },
+    {
+        path: "/forgotpass",
+        element: <Forgotpass />
     },
 ];
 
