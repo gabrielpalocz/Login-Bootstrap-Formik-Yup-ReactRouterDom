@@ -1,4 +1,4 @@
-import { render, screen, waitFor, fireEvent } from '@testing-library/react';
+import { render, screen } from '@testing-library/react';
 import { MemoryRouter as Router } from 'react-router-dom';
 import App from './App';
 import LoginPage from './components/authentication/views/login'

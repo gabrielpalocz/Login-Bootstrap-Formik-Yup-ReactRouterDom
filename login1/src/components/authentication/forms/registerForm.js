@@ -3,6 +3,10 @@ import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { strengthColor, strengthIndicator } from '../utils/passwordStrength';
 
+/**
+ * This is the Registration Form Schema 
+ */
+
 const RegisterFormSchema = Yup.object().shape({
     firstName: Yup.string()
         .min(3, 'Too Short!')

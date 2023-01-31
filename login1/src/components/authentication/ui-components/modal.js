@@ -1,5 +1,9 @@
 import React from 'react'
 
+/**
+ * This is the modal used to show the terms and conditions text
+ */
+
 export const Modal = (props) => {
 
     return (

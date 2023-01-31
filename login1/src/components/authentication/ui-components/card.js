@@ -1,5 +1,9 @@
 import React from 'react'
 
+/**
+ * This is the card used to wrap the forms content
+ */
+
 export const Card = (props) => {
 
     return (

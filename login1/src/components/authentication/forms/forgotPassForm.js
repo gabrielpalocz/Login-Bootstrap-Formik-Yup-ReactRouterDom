@@ -2,7 +2,11 @@ import React from 'react';
 import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 
-const LoginFormSchema = Yup.object().shape({
+/**
+ * This is the Forgot Password Form Schema 
+ */
+
+const forgotPassFormSchema = Yup.object().shape({
     email: Yup.string().email('Invalid').required('is required'),
 });
 
@@ -15,7 +19,7 @@ export const ForgotPassValidationSchema = ({ onSubmit }) => {
                 initialValues={{
                     email: '',
                 }}
-                validationSchema={LoginFormSchema}
+                validationSchema={forgotPassFormSchema}
                 onSubmit={async (values, actions) => {
                     await new Promise((r) => setTimeout(r, 1000));
                     onSubmit(values);

@@ -7,6 +7,10 @@ const hasMixed = (number) => new RegExp(/[a-z]/).test(number) && new RegExp(/[A-
 // has special chars
 const hasSpecial = (number) => new RegExp(/[!#@$%^&*)(+=._-]/).test(number);
 
+/**
+ * This is used to define the color and the name of the password strength 
+ */
+
 // set color based on password strength
 export const strengthColor = (count) => {
     if (count < 2) return { label: 'Poor', color: '#f44336', percentage: '10%' };
@@ -16,6 +20,10 @@ export const strengthColor = (count) => {
     if (count < 6) return { label: 'Strong', color: '#00c853', percentage: '100%' };
     return { label: 'Poor', color: '#f44336' };
 };
+
+/**
+ * This is used to indicate the password strength (number)
+ */
 
 // password strength indicator
 export const strengthIndicator = (number) => {

@@ -3,6 +3,10 @@ import { Formik, Form, Field } from 'formik';
 import * as Yup from 'yup';
 import { Link } from "react-router-dom";
 
+/**
+ * This is the Login Form Schema 
+ */
+
 const LoginFormSchema = Yup.object().shape({
     email: Yup.string().email('Invalid').required('is required'),
     password: Yup.string()
