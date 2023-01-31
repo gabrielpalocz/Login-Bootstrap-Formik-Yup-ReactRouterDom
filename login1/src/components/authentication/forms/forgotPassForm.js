@@ -11,7 +11,6 @@ const forgotPassFormSchema = Yup.object().shape({
 });
 
 export const ForgotPassValidationSchema = ({ onSubmit }) => {
-    let isEmailWrong = false
 
     return (
         <div>

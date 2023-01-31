@@ -27,12 +27,6 @@ const RegisterFormSchema = Yup.object().shape({
 });
 
 export const RegisterValidationSchema = ({ onSubmit }) => {
-    let isFNWrong = false;
-    let isLNWrong = false;
-    let isEmailWrong = false;
-    let isPassWrong = false;
-    let isTermCondCheck = false;
-
     const [strength, setStrength] = useState(0);
     const [level, setLevel] = useState();
 
@@ -41,7 +35,6 @@ export const RegisterValidationSchema = ({ onSubmit }) => {
         setStrength(temp);
         setLevel(strengthColor(temp));
     };
-
 
     return (
         <div>
