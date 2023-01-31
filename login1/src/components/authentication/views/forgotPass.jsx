@@ -8,15 +8,14 @@ import { BiReset } from 'react-icons/bi';
 // -------------------------------[ LOGIN VIEW ]------------------------------- //
 
 const ForgotPass = () => {
-    const [credentials, setCreadentials] = useState(null);
+    const [credentialSent, setCreadentialSent] = useState(null);
 
     useEffect(() => {
-        if (credentials) {
-            const c = JSON.stringify(credentials, null, 2);
-            localStorage.setItem('user', c);
+        if (credentialSent) {
+            const c = JSON.stringify(credentialSent, null, 2);
             alert(c);
         }
-    }, [credentials]);
+    }, [credentialSent]);
 
     return (
         <Card>
@@ -26,7 +25,7 @@ const ForgotPass = () => {
             </div>
             <h3 className='mt-5 fw-bold' style={{ color: '#6456ff' }}>Forgot password?</h3>
             <h6 className='mt-3 mb-4 text-muted'>Enter your email address below and we will send you password reset </h6>
-            <FPValidationSchema onSubmit={(e) => setCreadentials(e)} />
+            <FPValidationSchema onSubmit={(e) => setCreadentialSent(e)} />
             <hr className=" border border-secondary-subtle opacity-50" />
             <Link to="/login" style={{ color: 'black', textDecoration: 'none' }}>Already have an account?</Link>
         </Card>
