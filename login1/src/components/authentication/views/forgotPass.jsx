@@ -5,7 +5,7 @@ import { FPValidationSchema } from '../forms/forgotPassForm';
 import { BiReset } from 'react-icons/bi';
 
 
-// -------------------------------[ LOGIN VIEW ]------------------------------- //
+// -------------------------------[ FORGOT PASSWORD VIEW ]------------------------------- //
 
 const ForgotPass = () => {
     const [credentialSent, setCreadentialSent] = useState(null);
