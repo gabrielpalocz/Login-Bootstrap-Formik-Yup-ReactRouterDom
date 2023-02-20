@@ -1,7 +1,5 @@
 import React from 'react'
 import useWindowDimensions from '../../../utils/hook/screenSize';
-import image from '../../../assets/images/logImage.jpg';
-
 
 /**
  * This is used to wrap the forms content
@@ -25,7 +23,7 @@ export const Card = (props) => {
                 <div class="col">
                 
                     <div className='container px-md-5' style={{ minWidth: "24rem" }}>
-                        <h1 class="my-5 display-3 fw-bold ls-tight ">
+                        <h1 class="my-5 display-3 fw-bold ">
                         COMPANY <br />
                             <span class="text-primary">info of your app</span>
                         </h1>
@@ -41,5 +39,3 @@ export const Card = (props) => {
         </div>
     )
 }
-
-
