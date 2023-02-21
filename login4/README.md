@@ -10,10 +10,10 @@ This project was created with:
 [React-Icons](https://github.com/react-icons/react-icons).
 
 This is what the login view looks like:
-![login4](https://user-images.githubusercontent.com/121043838/220356817-e95ed366-c7f6-4106-9d9e-f019a7965e7f.png)
+![login4](https://user-images.githubusercontent.com/121043838/220357687-218813dc-789a-472c-bcdf-8197be8006e6.png)
 
 And this is how it looks when it controls the filling of the form:
-![login4control](https://user-images.githubusercontent.com/121043838/220357125-ebfb1be8-9826-405f-a6a1-a2c275752af7.png)
+![login4control](https://user-images.githubusercontent.com/121043838/220357714-03baa810-0d37-482d-98f9-c9d80d7156c2.png)
 
 ## Available Scripts
 
