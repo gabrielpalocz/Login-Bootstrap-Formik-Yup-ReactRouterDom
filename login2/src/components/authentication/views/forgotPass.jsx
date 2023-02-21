@@ -4,11 +4,12 @@ import { Card } from '../ui-components/card.js'
 import { ForgotPassValidationSchema } from '../forms/forgotPassForm';
 import { BiReset } from 'react-icons/bi';
 
+
+// -------------------------------[ FORGOT PASSWORD VIEW ]------------------------------- //
+
 /**
  * This is the Forgot Password view 
  */
-
-// -------------------------------[ FORGOT PASSWORD VIEW ]------------------------------- //
 
 const ForgotPass = () => {
     const [credentialSent, setCreadentialSent] = useState(null);

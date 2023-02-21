@@ -7,11 +7,12 @@ import AuthRegister from '../components/authentication/views/register';
 //  forgot password routing
 import Forgotpass from '../components/authentication/views/forgotPass'
 
+
+// -------------------------------[ AUTHENTICATION ROUTING ]------------------------------- //
+
 /**
  * This is the authencation routing 
  */
-
-// -------------------------------[ AUTHENTICATION ROUTING ]------------------------------- //
 
 const AuthenticationRoutes = [
     {
