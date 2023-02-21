@@ -16,7 +16,9 @@ const LoginFormSchema = Yup.object().shape({
 });
 
 /**
- * This is the Login validator 
+ * 
+ * @param {*} param0 
+ * @returns a JSON with the accepted data
  */
 
 export const LoginValidationSchema = ({ onSubmit }) => {
