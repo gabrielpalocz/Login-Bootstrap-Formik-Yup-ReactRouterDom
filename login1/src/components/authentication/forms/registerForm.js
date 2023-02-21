@@ -27,7 +27,9 @@ const RegisterFormSchema = Yup.object().shape({
 });
 
 /**
- * This is the Registration validator 
+ * Registration Form with inputs validator
+ * @param {*} onSubmit - Data from the user 
+ * @returns {Object} {firstName: string, lastName: string, email: string, password: string, termCondCheck: Boolean}
  */
 
 export const RegisterValidationSchema = ({ onSubmit }) => {

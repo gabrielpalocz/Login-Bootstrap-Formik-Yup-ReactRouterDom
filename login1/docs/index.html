@@ -259,7 +259,7 @@
   </div>
   
 
-  <p>This is the Forgot Password validator</p>
+  <p>Forgot Password Form with inputs validator</p>
 
     <div class='pre p1 fill-light mt0'>ForgotPassValidationSchema</div>
   
@@ -278,8 +278,9 @@
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
-	    
+            <span class='code bold'>onSubmit</span> <code class='quiet'>(any)</code>
+	    Data from the user
+
           </div>
           
           <table class='mt1 mb2 fixed-table h5 col-12'>
@@ -296,7 +297,7 @@
             <tbody class='mt1'>
               
                 <tr>
-  <td class='break-word'><span class='code bold'>$0.onSubmit</span> <code class='quiet'>any</code>
+  <td class='break-word'><span class='code bold'>onSubmit.onSubmit</span> <code class='quiet'>any</code>
   </td>
   <td class='break-word'><span></span></td>
 </tr>
@@ -313,6 +314,14 @@
 
   
 
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        {email: string}
+
+      
+    
   
 
   
@@ -346,7 +355,7 @@
   </div>
   
 
-  <p>This is the Login Form Schema</p>
+  <p>This is the Login Form Schema to control the user inputs</p>
 
     <div class='pre p1 fill-light mt0'>LoginFormSchema</div>
   
@@ -396,7 +405,8 @@
   </div>
   
 
-  
+  <p>Login Form with inputs validator</p>
+
     <div class='pre p1 fill-light mt0'>LoginValidationSchema</div>
   
   
@@ -414,8 +424,9 @@
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>param0</span> <code class='quiet'>(any)</code>
-	    
+            <span class='code bold'>onSubmit</span> <code class='quiet'>(any)</code>
+	    Data from the user
+
           </div>
           
           <table class='mt1 mb2 fixed-table h5 col-12'>
@@ -432,7 +443,7 @@
             <tbody class='mt1'>
               
                 <tr>
-  <td class='break-word'><span class='code bold'>param0.onSubmit</span> <code class='quiet'>any</code>
+  <td class='break-word'><span class='code bold'>onSubmit.onSubmit</span> <code class='quiet'>any</code>
   </td>
   <td class='break-word'><span></span></td>
 </tr>
@@ -452,8 +463,8 @@
   
     
       <div class='py1 quiet mt1 prose-big'>Returns</div>
-      <code>any</code>:
-        a JSON with the accepted data
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        {email: string, password: string, loginCheck: Boolean}
 
       
     
@@ -540,7 +551,7 @@
   </div>
   
 
-  <p>This is the Registration validator</p>
+  <p>Registration Form with inputs validator</p>
 
     <div class='pre p1 fill-light mt0'>RegisterValidationSchema</div>
   
@@ -559,8 +570,9 @@
       
         <div class='space-bottom0'>
           <div>
-            <span class='code bold'>$0</span> <code class='quiet'>(<a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a>)</code>
-	    
+            <span class='code bold'>onSubmit</span> <code class='quiet'>(any)</code>
+	    Data from the user
+
           </div>
           
           <table class='mt1 mb2 fixed-table h5 col-12'>
@@ -577,7 +589,7 @@
             <tbody class='mt1'>
               
                 <tr>
-  <td class='break-word'><span class='code bold'>$0.onSubmit</span> <code class='quiet'>any</code>
+  <td class='break-word'><span class='code bold'>onSubmit.onSubmit</span> <code class='quiet'>any</code>
   </td>
   <td class='break-word'><span></span></td>
 </tr>
@@ -594,6 +606,14 @@
 
   
 
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code><a href="https://developer.mozilla.org/docs/Web/JavaScript/Reference/Global_Objects/Object">Object</a></code>:
+        {firstName: string, lastName: string, email: string, password: string, termCondCheck: Boolean}
+
+      
+    
   
 
   

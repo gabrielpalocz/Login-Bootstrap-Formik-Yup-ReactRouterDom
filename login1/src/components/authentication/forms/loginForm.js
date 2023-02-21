@@ -4,7 +4,7 @@ import * as Yup from 'yup';
 import { Link } from "react-router-dom";
 
 /**
- * This is the Login Form Schema 
+ * This is the Login Form Schema to control the user inputs
  */
 
 const LoginFormSchema = Yup.object().shape({
@@ -15,10 +15,11 @@ const LoginFormSchema = Yup.object().shape({
         .required('is required'),
 });
 
+
 /**
- * 
- * @param {*} param0 
- * @returns a JSON with the accepted data
+ * Login Form with inputs validator
+ * @param {*} onSubmit - Data from the user 
+ * @returns {Object} {email: string, password: string, loginCheck: Boolean}
  */
 
 export const LoginValidationSchema = ({ onSubmit }) => {

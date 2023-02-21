@@ -17,6 +17,7 @@ const Login = () => {
         if (credentials) {
             const c = JSON.stringify(credentials, null, 2);
             localStorage.setItem('user', c);
+            setCreadentials(null);
             alert(c);
         }
     }, [credentials]);
