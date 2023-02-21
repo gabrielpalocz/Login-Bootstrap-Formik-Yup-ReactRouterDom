@@ -26,6 +26,12 @@ const RegisterFormSchema = Yup.object().shape({
     termCondCheck: Yup.boolean().oneOf([true], 'is required.'),
 });
 
+/**
+ * Registration Form with inputs validator
+ * @param {*} onSubmit - Data from the user 
+ * @returns {Object} {firstName: string, lastName: string, email: string, password: string, termCondCheck: Boolean}
+ */
+
 export const RegisterValidationSchema = ({ onSubmit }) => {
     const [strength, setStrength] = useState(0);
     const [level, setLevel] = useState();
