@@ -10,6 +10,10 @@ const forgotPassFormSchema = Yup.object().shape({
     email: Yup.string().email('Invalid').required('is required'),
 });
 
+/**
+ * This is the Forgot Password validator 
+ */
+
 export const ForgotPassValidationSchema = ({ onSubmit }) => {
 
     return (
