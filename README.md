@@ -1,2 +1,2 @@
 # Login-bootstrap-formik-yup-react-router-dom
-These are login and registration samples
+In this folder you will find samples of responsive login and registration
