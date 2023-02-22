@@ -6,8 +6,10 @@ import AuthenticationRoutes from './AuthenticationRoutes';
 
 // -------------------------------[ ROUTING RENDER ]------------------------------- //
 
+
 /**
- * This is the routing render 
+ * 
+ * @returns the routing render 
  */
 
 export default function ThemeRoutes() {

@@ -3,6 +3,12 @@ import { useState, useEffect } from "react";
 
 // ----------------------------[ WINDOW DIMENSIONS FUNCTION ]----------------------------- //
 
+
+/**
+ * This function gets the window dimensions
+ * @returns window dimensions (width, height)
+ */
+
 function getWindowDimensions() {
     const { innerWidth: width, innerHeight: height } = window;
     return {
@@ -11,8 +17,10 @@ function getWindowDimensions() {
     };
 }
 
+
 /**
- * This is the function to get the window dimensions
+ * This is the function to export the window dimensions
+ * @returns const windowDimensions
  */
 
 export default function useWindowDimensions() {
