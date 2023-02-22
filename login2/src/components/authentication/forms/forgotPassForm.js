@@ -12,7 +12,7 @@ const forgotPassFormSchema = Yup.object().shape({
 
 /**
  * Forgot Password Form with inputs validator
- * @param {*} onSubmit - Data from the user 
+ * @param {*} onSubmit - Form data 
  * @returns {Object} {email: string}
  */
 
