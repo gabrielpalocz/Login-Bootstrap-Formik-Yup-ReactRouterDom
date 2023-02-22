@@ -5,11 +5,14 @@ import { BsPencilSquare } from 'react-icons/bs';
 import { Card } from '../ui-components/card.js'
 import { Modal } from '../ui-components/modal'
 
-/**
- * This is the Register view 
- */
 
 // -------------------------------[ REGISTER VIEW ]------------------------------- //
+
+
+/**
+ * 
+ * @returns Register view 
+ */
 
 const Register = () => {
     const [credentialsReg, setCredentialsReg] = useState(null);

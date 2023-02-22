@@ -4,11 +4,14 @@ import { Card } from '../ui-components/card.js'
 import { LoginValidationSchema } from '../forms/loginForm';
 import { RiLoginCircleLine } from 'react-icons/ri';
 
-/**
- * This is the Login view 
- */
 
 // -------------------------------[ LOGIN VIEW ]------------------------------- //
+
+
+/**
+ * 
+ * @returns Login view 
+ */
 
 const Login = () => {
     const [credentials, setCreadentials] = useState(null);

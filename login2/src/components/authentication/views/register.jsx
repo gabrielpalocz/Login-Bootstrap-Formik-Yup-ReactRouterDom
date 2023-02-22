@@ -8,8 +8,10 @@ import { Modal } from '../ui-components/modal'
 
 // -------------------------------[ REGISTER VIEW ]------------------------------- //
 
+
 /**
- * This is the Register view 
+ * 
+ * @returns Register view 
  */
 
 const Register = () => {

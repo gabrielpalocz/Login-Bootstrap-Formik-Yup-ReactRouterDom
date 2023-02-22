@@ -7,8 +7,10 @@ import { BiReset } from 'react-icons/bi';
 
 // -------------------------------[ FORGOT PASSWORD VIEW ]------------------------------- //
 
+
 /**
- * This is the Forgot Password view 
+ * 
+ * @returns Forgot Password view 
  */
 
 const ForgotPass = () => {

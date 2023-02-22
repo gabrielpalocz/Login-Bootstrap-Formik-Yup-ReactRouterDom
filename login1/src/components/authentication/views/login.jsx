@@ -7,10 +7,11 @@ import { RiLoginCircleLine } from 'react-icons/ri';
 
 // -------------------------------[ LOGIN VIEW ]------------------------------- //
 
-/**
- * This is the Login view 
- */
 
+/**
+ * 
+ * @returns Login view
+ */
 const Login = () => {
     const [credentials, setCreadentials] = useState(null);
 
