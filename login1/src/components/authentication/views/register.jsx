@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 import { RegisterValidationSchema } from '../forms/registerForm';
 import { BsPencilSquare } from 'react-icons/bs';
-import { Card } from '../layout/cardLayout'
+import { CardLayout } from '../layout/cardLayout'
 import { Modal } from '../ui-components/modal'
 
 
@@ -25,7 +25,7 @@ const Register = () => {
     });
 
     return (
-        <Card>
+        <CardLayout>
             <div className='d-flex justify-content-center pt-3'>
                 <BsPencilSquare className='fs-1 me-2' />
                 <h2 className="card-title fw-bold">REGISTER</h2>
@@ -36,7 +36,7 @@ const Register = () => {
             <hr className=" border border-secondary-subtle opacity-50" />
             <Link to="/login" style={{ color: 'black', textDecoration: 'none' }}>Already have an account?</Link>
             <Modal>...</Modal>
-        </Card>
+        </CardLayout>
     )
 }
 

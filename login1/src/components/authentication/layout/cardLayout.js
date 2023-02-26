@@ -5,7 +5,7 @@ import useWindowDimensions from '../../../utils/hook/screenSize';
  * This is the card used to wrap the forms content
  */
 
-export const Card = (props) => {
+export const CardLayout = (props) => {
     const { height } = useWindowDimensions()
 
     return (

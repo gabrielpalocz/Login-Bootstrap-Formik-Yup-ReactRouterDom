@@ -7,7 +7,7 @@ import image from '../../../assets/images/logImage.jpg';
  * This is used to wrap the forms content
  */
 
-export const Card = (props) => {
+export const CardLayout = (props) => {
     const { height } = useWindowDimensions()
 
     return (

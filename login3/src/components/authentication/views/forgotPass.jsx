@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
-import { Card } from '../ui-components/card.js'
+import { CardLayout } from '../layout/cardLayout'
 import { ForgotPassValidationSchema } from '../forms/forgotPassForm';
 import { BiReset } from 'react-icons/bi';
 
@@ -24,7 +24,7 @@ const ForgotPass = () => {
     }, [credentialSent]);
 
     return (
-        <Card>
+        <CardLayout>
             <div className='d-flex justify-content-center pt-3'>
                 <BiReset className='fs-1 me-1' />
                 <h2 className="card-title fw-bold">Reset Password</h2>
@@ -34,7 +34,7 @@ const ForgotPass = () => {
             <ForgotPassValidationSchema onSubmit={(e) => setCreadentialSent(e)} />
             <hr className=" border border-secondary-subtle opacity-50" />
             <Link to="/login" style={{ color: 'black', textDecoration: 'none' }}>Already have an account?</Link>
-        </Card>
+        </CardLayout>
 
     )
 }

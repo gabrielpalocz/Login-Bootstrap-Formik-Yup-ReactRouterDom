@@ -88,9 +88,9 @@
               
                 
                 <li><a
-                  href='#card'
+                  href='#cardlayout'
                   class="">
-                  Card
+                  CardLayout
                   
                 </a>
                 
@@ -171,6 +171,16 @@
                   href='#themeroutes'
                   class="">
                   ThemeRoutes
+                  
+                </a>
+                
+                </li>
+              
+                
+                <li><a
+                  href='#getwindowdimensions'
+                  class="">
+                  getWindowDimensions
                   
                 </a>
                 
@@ -279,7 +289,7 @@
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>onSubmit</span> <code class='quiet'>(any)</code>
-	    Data from the user
+	    Form data
 
           </div>
           
@@ -425,7 +435,7 @@
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>onSubmit</span> <code class='quiet'>(any)</code>
-	    Data from the user
+	    Form data
 
           </div>
           
@@ -571,7 +581,7 @@
         <div class='space-bottom0'>
           <div>
             <span class='code bold'>onSubmit</span> <code class='quiet'>(any)</code>
-	    Data from the user
+	    Form data
 
           </div>
           
@@ -639,8 +649,8 @@
   
   <div class='clearfix'>
     
-    <h3 class='fl m0' id='card'>
-      Card
+    <h3 class='fl m0' id='cardlayout'>
+      CardLayout
     </h3>
     
     
@@ -649,7 +659,7 @@
 
   <p>This is used to wrap the forms content</p>
 
-    <div class='pre p1 fill-light mt0'>Card</div>
+    <div class='pre p1 fill-light mt0'>CardLayout</div>
   
   
 
@@ -899,8 +909,7 @@
   </div>
   
 
-  <p>This is the Forgot Password view</p>
-
+  
     <div class='pre p1 fill-light mt0'>ForgotPass</div>
   
   
@@ -916,6 +925,14 @@
 
   
 
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        Forgot Password view
+
+      
+    
   
 
   
@@ -949,8 +966,7 @@
   </div>
   
 
-  <p>This is the Login view</p>
-
+  
     <div class='pre p1 fill-light mt0'>Login</div>
   
   
@@ -966,6 +982,14 @@
 
   
 
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        Login view
+
+      
+    
   
 
   
@@ -999,8 +1023,7 @@
   </div>
   
 
-  <p>This is the Register view</p>
-
+  
     <div class='pre p1 fill-light mt0'>Register</div>
   
   
@@ -1016,6 +1039,14 @@
 
   
 
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        Register view
+
+      
+    
   
 
   
@@ -1099,9 +1130,8 @@
   </div>
   
 
-  <p>This is the routing render</p>
-
-    <div class='pre p1 fill-light mt0'>new ThemeRoutes()</div>
+  
+    <div class='pre p1 fill-light mt0'>new ThemeRoutes(): any</div>
   
   
 
@@ -1116,6 +1146,72 @@
 
   
 
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        the routing render
+
+      
+    
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+</section>
+
+          
+        
+          
+          <section class='p2 mb2 clearfix bg-white minishadow'>
+
+  
+  <div class='clearfix'>
+    
+    <h3 class='fl m0' id='getwindowdimensions'>
+      getWindowDimensions
+    </h3>
+    
+    
+  </div>
+  
+
+  <p>This function gets the window dimensions</p>
+
+    <div class='pre p1 fill-light mt0'>getWindowDimensions(): any</div>
+  
+  
+
+  
+  
+  
+  
+  
+  
+
+  
+
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        window dimensions (width, height)
+
+      
+    
   
 
   
@@ -1149,23 +1245,31 @@
   </div>
   
 
-  <p>This is the function to get the window dimensions</p>
+  <p>This is the function to export the window dimensions</p>
 
-    <div class='pre p1 fill-light mt0'>useWindowDimensions()</div>
-  
-  
-
-  
-  
-  
-  
+    <div class='pre p1 fill-light mt0'>useWindowDimensions(): any</div>
   
   
 
   
+  
+  
+  
+  
+  
 
   
 
+  
+
+  
+    
+      <div class='py1 quiet mt1 prose-big'>Returns</div>
+      <code>any</code>:
+        const windowDimensions
+
+      
+    
   
 
   
