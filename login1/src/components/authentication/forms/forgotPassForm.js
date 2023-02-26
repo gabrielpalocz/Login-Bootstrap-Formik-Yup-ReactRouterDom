@@ -40,11 +40,11 @@ export const ForgotPassValidationSchema = ({ onSubmit }) => {
                                 <Field
                                     type="email"
                                     name="email"
-                                    className={touched.email && errors.email ? "form-control shadow-none rounded-4 is-invalid" : "form-control shadow-none rounded-4"}
+                                    className={`form-control shadow-none rounded-4 ${touched.email && errors.email ? "is-invalid" : ""}`}
                                     placeholder="Email"
                                 />
                                 <label htmlFor="email" >
-                                    <p className={touched.email && errors.email ? "text-danger" : "text-body"}>{touched.email && errors.email ? `Email address ${errors.email}` : "Email address"}</p>
+                                    <p className={touched.email && errors.email ? "text-danger" : "text-body"}>{`Email address ${touched.email && errors.email ?  errors.email : "Email address"}`}</p>
                                 </label>
                             </div>                           
                             <button className='btn rounded-3 p-2 fw-bold' type="submit" disabled={isSubmitting} style={{ backgroundColor: '#6456ff', color: 'white' }}>{isSubmitting ? <><span className="spinner-border spinner-border-sm" role="status" aria-hidden="true"></span>&nbsp;<strong>Sending Mail</strong></> : <strong>Send Mail</strong>}</button>

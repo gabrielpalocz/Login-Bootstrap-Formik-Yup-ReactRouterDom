@@ -71,7 +71,7 @@ export const RegisterValidationSchema = ({ onSubmit }) => {
                                         <Field
                                             type="text"
                                             name="firstName"
-                                            className={touched.firstName && errors.firstName ? "form-control shadow-none rounded-4 is-invalid" : "form-control shadow-none rounded-4"}
+                                            className={`form-control shadow-none rounded-4 ${touched.firstName && errors.firstName ? "is-invalid" : ""}`}
                                             placeholder="firstName" />
                                         <label htmlFor="firstName" className={touched.firstName && errors.firstName ? "text-danger" : "text-body"}>{touched.firstName && errors.firstName ? `${errors.firstName}` : "First Name"}</label>
                                     </div>
@@ -81,7 +81,7 @@ export const RegisterValidationSchema = ({ onSubmit }) => {
                                         <Field
                                             type="text"
                                             name="lastName"
-                                            className={touched.lastName && errors.lastName ? "form-control shadow-none rounded-4 is-invalid" : "form-control shadow-none rounded-4"}
+                                            className={`form-control shadow-none rounded-4 ${touched.lastName && errors.lastName ? "is-invalid" : ""}`}
                                             placeholder="lastName" />
                                         <label htmlFor="lastName" className={touched.lastName && errors.lastName ? "text-danger" : "text-body"}>{touched.lastName && errors.lastName ? `${errors.lastName}` : "Last Name"}</label>
                                     </div>
@@ -91,20 +91,20 @@ export const RegisterValidationSchema = ({ onSubmit }) => {
                                 <Field
                                     type="email"
                                     name="email"
-                                    className={touched.email && errors.email ? "form-control shadow-none rounded-4 is-invalid" : "form-control shadow-none rounded-4"}
+                                    className={`form-control shadow-none rounded-4 ${touched.email && errors.email ? "is-invalid" : ""}`}
                                     placeholder="Email" />
-                                <label htmlFor="email" className={touched.email && errors.email ? "text-danger" : "text-body"}>{touched.email && errors.email ? `Email address ${errors.email}` : "Email address"}</label>
+                                <label htmlFor="email" className={touched.email && errors.email ? "text-danger" : "text-body"}>{`Email address ${touched.email && errors.email ? errors.email : ""}`}</label>
                             </div>
                             <div className="form-floating">
                                 <Field
                                     type="password"
                                     name="password"
-                                    className={touched.password && errors.password ? "form-control shadow-none rounded-4 is-invalid" : "form-control shadow-none rounded-4"}
+                                    className={`form-control shadow-none rounded-4 ${touched.password && errors.password ? "is-invalid" : ""}`}
                                     placeholder="Password"
                                     onKeyUp={(e) => {
                                         PasswordLevel(e.target.value);
                                     }} />
-                                <label htmlFor="password" className={touched.password && errors.password ? "text-danger" : "text-body"}>{touched.password && errors.password ? `Password ${errors.password}` : "Password"}</label>
+                                <label htmlFor="password" className={touched.password && errors.password ? "text-danger" : "text-body"}>{`Password ${touched.password && errors.password ? errors.password : ""}`}</label>
                             </div>
                             {strength !== 0 && (
                                 <div className="progress" role="progressbar" aria-label="Basic example" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100">
@@ -113,13 +113,13 @@ export const RegisterValidationSchema = ({ onSubmit }) => {
                             <div className='form-check d-flex ps-1'>
                                 <Field type="checkbox" id='termCondCheck' name='termCondCheck' onClick={() => touched.termCondCheck = true} />
                                 <label className="form-check-label ms-2" htmlFor="termCondCheck">
-                                    <div className={touched.termCondCheck && errors.termCondCheck ? "d-flex text-danger" : "d-flex text-body"}>
+                                    <div className={`d-flex ${touched.termCondCheck && errors.termCondCheck ? "text-danger" : "text-body"}`}>
                                         Agree with &nbsp;
                                     </div>
                                 </label>
-                                <span className={touched.termCondCheck && errors.termCondCheck ? "nav-link text-danger" : "nav-link text-body"} role="button" data-bs-toggle="modal" data-bs-target="#registerFormModal" style={{ color: '#6456ff', textDecoration: 'underline' }}>{touched.termCondCheck && errors.termCondCheck ? "Terms & Condition" : "Terms & Condition."}</span>
+                                <span className={`nav-link ${touched.termCondCheck && errors.termCondCheck ? " text-danger" : "text-body"}`} role="button" data-bs-toggle="modal" data-bs-target="#registerFormModal" style={{ color: '#6456ff', textDecoration: 'underline' }}>Terms & Condition{touched.termCondCheck && errors.termCondCheck ? "" : "."}</span>
                                 <label className="form-check-label" htmlFor="termCondCheck">
-                                    <div className={touched.termCondCheck && errors.termCondCheck ? "d-flex text-danger" : "d-flex text-body"}>
+                                    <div className={`d-flex ${touched.termCondCheck && errors.termCondCheck ? " text-danger" : "text-body"}`}>
                                         <div>&nbsp;&nbsp;{touched.termCondCheck && errors.termCondCheck ? errors.termCondCheck : null}</div>
                                     </div>
                                 </label>

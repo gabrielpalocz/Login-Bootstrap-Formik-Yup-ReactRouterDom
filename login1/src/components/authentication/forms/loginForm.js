@@ -48,21 +48,23 @@ export const LoginValidationSchema = ({ onSubmit }) => {
                                 <Field
                                     type="email"
                                     name="email"
-                                    className={touched.email && errors.email ? "form-control shadow-none rounded-4 is-invalid" : "form-control shadow-none rounded-4"}
+                                    className={`form-control shadow-none rounded-4 ${touched.email && errors.email ? "is-invalid" : ""}`}
                                     placeholder="Email"
                                 />
                                 <label htmlFor="email" >
-                                    <p className={touched.email && errors.email ? "text-danger" : "text-body"}>{touched.email && errors.email ? `Email address ${errors.email}` : "Email address"}</p>
+                                    <p className={touched.email && errors.email ? "text-danger" : "text-body"}>{`Email address ${touched.email && errors.email ? errors.email : ""}`}</p>
                                 </label>
                             </div>
                             <div className="form-floating">
                                 <Field
                                     type={"password"}
                                     name="password"
-                                    className={touched.password && errors.password ? "form-control shadow-none rounded-4 is-invalid" : "form-control shadow-none rounded-4"}
+                                    className={`form-control shadow-none rounded-4 ${touched.password && errors.password ? "is-invalid" : ""}`}
                                     placeholder="Password"
                                 />
-                                <label htmlFor="password" ><p className={touched.password && errors.password ? "text-danger" : "text-body"}>{touched.password && errors.password ? `Password ${errors.password}` : "Password"}</p></label>
+                                <label htmlFor="password" >
+                                    <p className={touched.password && errors.password ? "text-danger" : "text-body"}>{`Password ${touched.password && errors.password ? errors.password : "Password"}`}</p>
+                                </label>
                             </div>
                             <div className='d-flex justify-content-between p-1'>
                                 <div className='d-flex '>
@@ -81,3 +83,4 @@ export const LoginValidationSchema = ({ onSubmit }) => {
         </div>
     );
 }
+
