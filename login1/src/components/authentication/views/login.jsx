@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
-import { Card } from '../ui-components/card.js'
+import { Card } from '../layout/cardLayout'
 import { LoginValidationSchema } from '../forms/loginForm';
 import { RiLoginCircleLine } from 'react-icons/ri';
 

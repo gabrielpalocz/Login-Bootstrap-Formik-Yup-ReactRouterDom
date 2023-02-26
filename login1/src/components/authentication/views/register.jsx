@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { Link } from "react-router-dom";
 import { RegisterValidationSchema } from '../forms/registerForm';
 import { BsPencilSquare } from 'react-icons/bs';
-import { Card } from '../ui-components/card.js'
+import { Card } from '../layout/cardLayout'
 import { Modal } from '../ui-components/modal'
 
 
