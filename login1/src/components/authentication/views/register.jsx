@@ -26,10 +26,12 @@ const Register = () => {
 
     return (
         <CardLayout>
-            <div className='d-flex justify-content-center pt-3'>
-                <BsPencilSquare className='fs-1 me-2' />
-                <h2 className="card-title fw-bold">REGISTER</h2>
-            </div>
+            <h2 className="card-title fw-bold pt-3">
+                <div className='d-flex justify-content-center'>
+                    <BsPencilSquare className='fs-1 me-2' />
+                    REGISTER
+                </div>
+            </h2>
             <h3 className='mt-5 fw-bold' style={{ color: '#6456ff' }}>Hello, please fill in!</h3>
             <h6 className='mt-3 mb-4 text-muted'>Enter your credentials to continue.</h6>
             <RegisterValidationSchema onSubmit={(e) => setCredentialsReg(e)} />

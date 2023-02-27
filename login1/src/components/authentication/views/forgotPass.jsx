@@ -25,10 +25,12 @@ const ForgotPass = () => {
 
     return (
         <CardLayout>
-            <div className='d-flex justify-content-center pt-3'>
-                <BiReset className='fs-1 me-1' />
-                <h2 className="card-title fw-bold">Reset Password</h2>
-            </div>
+            <h2 className="card-title fw-bold pt-3">
+                <div className='d-flex justify-content-center'>
+                    <BiReset className='fs-1 me-1' />
+                    Reset Password
+                </div>
+            </h2>
             <h3 className='mt-5 fw-bold' style={{ color: '#6456ff' }}>Forgot password?</h3>
             <h6 className='mt-3 mb-4 text-muted'>Enter your email address below and we will send you password reset </h6>
             <ForgotPassValidationSchema onSubmit={(e) => setCreadentialSent(e)} />

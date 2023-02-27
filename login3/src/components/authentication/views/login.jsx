@@ -27,10 +27,12 @@ const Login = () => {
 
     return (
         <CardLayout>
-            <div className='d-flex justify-content-center pt-3'>
-                <RiLoginCircleLine className='fs-1 me-1' />
-                <h2 className="card-title fw-bold">LOGIN</h2>
-            </div>
+            <h2 className="card-title fw-bold pt-3">
+                <div className='d-flex justify-content-center'>
+                    <RiLoginCircleLine className='fs-1 me-1' />
+                    LOGIN
+                </div>
+            </h2>
             <h3 className='mt-5 fw-bold' style={{ color: '#6456ff' }}>Hello, Have a good day!</h3>
             <h6 className='mt-3 mb-4 text-muted'>Enter your credentials to continue.</h6>
             <LoginValidationSchema onSubmit={(e) => setCreadentials(e)} />
